@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GOTTA MATCH 'EM ALL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 class = "page-Title">GOTTA MATCH 'EM ALL</h1>
+    </header>
+    <div class="cover-text visible">
+        CLICK TO BEGIN
+        <ul class = 'rule-set'>Rules of the game: 
+            <ol class ='rules' >🔘 Objective of the game is to find all the matching pokemon!</ol>
+            <ol class = 'rules'>🔘 Click on any card to flip it over, and then click on another one to find its match!</ol>
+            <ol class = 'rules'>🔘 Don't forget, you only have 60 seconds to match 'em all!</ol>
+            <ol class = 'rules last-rule'>🔘 Win the game in 30 seconds or less, and you're a Master Pokemon Trainer!</ol>
+        </ul>
+    </div>
+    <div id= "winning-text" class="cover-text">
+       YOU'VE MATCHED 'EM ALL, GOOD JOB!
+       <span id="final-trainer-level"></span>
+            <span class = "cover-text-small">Click to play again</span>
+    </div>
+    <div id= "losing-text" class="cover-text ">
+        GAME OVER :(
+            <ul class = 'rule-set'>Rules of the game: 
+                <ol class ='rules' >🔘 Objective of the game is to find all the matching pokemon!</ol>
+                <ol class = 'rules'>🔘 Click on any card to flip it over, and then click on another one to find its match!</ol>
+                <ol class = 'rules'>🔘 Don't forget, you only have 60 seconds to match 'em all!</ol>
+                <ol class = 'rules last-rule'>🔘 Win the game in 30 seconds or less, and you're a Master Pokemon Trainer!</ol>
+            </ul>
+            <span class = "cover-text-small">Click to play again</span>
+    </div>
+    <div class="game-container">
+        <section class="scoreboard-container">
+        	<div class="scoreboard">
+                Time (seconds): <span class = "info" id = "timer">60</span>
+            </div>  
+            <div class="scoreboard">
+                Trainer Level: <span class = "info" id = "level">-----</span>
+            </div>   
+            <div class="scoreboard">
+                Move(s): <span class = "info" id="moves">0</span>
+            </div>     
+        </section> 
+        <section class="gameboard">
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/charmander.png">
+                </div>
+            </div>            
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/charmander.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Bulbasaur.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Bulbasaur.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Dragonite.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Dragonite.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Pikachu.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Pikachu.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Snorlax.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Snorlax.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Gengar.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Gengar.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Squirtle.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Squirtle.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Pidgeot.png">
+                </div>
+            </div>
+            <div class="pokemon visible">
+                <div class="back face">
+                <img class="pokeball-image" src= "Objects/Images/pokemon card back design.png">
+                </div>
+                <div class="front face">
+                <img class="pokemon-value" src= "Objects/Images/Pidgeot.png">
+                </div>
+            </div>
+        </section>
+      
+    </div>
+    <script src="script.js" async></script>
+</body>
+</html>
